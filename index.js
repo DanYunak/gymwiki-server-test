@@ -19,7 +19,7 @@ app.use(cors({
     origin: process.env.CLIENT_URL
 }))
 
-app.use('/', router)
+app.use('/api', router)
 
 app.use(errorMiddleware) // should be the last in the list of middlewares
 
